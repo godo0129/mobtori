@@ -1,7 +1,8 @@
 class ApplicationController < ActionController::Base
 
   def cafe
-    render html: "モブトリへようこそ!"
+    render html: "モブトリのサイトですよ"
+    print("Hello, Ruby")
   end
 
 end
