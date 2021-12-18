@@ -1,6 +1,7 @@
 class SpreadsheetsController < ApplicationController
+  # require "rubygems"
   require "google_drive"
-  session = GoogleDrive::Session.from_config("./client_secret_105836604420-1tdm9b4i861vjvpijbko7hf3kln7go3s.apps.googleusercontent.com.json")
+  session = GoogleDrive::Session.from_config("./client_secret_105836604420-tiqo0d87g30cnuesqdk6vtb8usii7urv.apps.googleusercontent.com.json")
   
   def read
     # 処理対象のスプレッドシートを指定
