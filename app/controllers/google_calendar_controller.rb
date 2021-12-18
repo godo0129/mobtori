@@ -4,9 +4,10 @@ class GoogleCalendarController < ApplicationController
     require "googleauth/stores/file_token_store"
     require "fileutils"
     
-    APPLICATION_NAME = 'id-258@calendar-335211.iam.gserviceaccount.com'
-    MY_CALENDAR_ID = 'komei.hasegawa@happy-bears.net'
-    CLIENT_SECRET_PATH = './calendar-335211-3b68ce24c7c5.json'
+    # APPLICATION_NAME = 'id-258@calendar-335211.iam.gserviceaccount.com'
+    APPLICATION_NAME = 'montori@wordpress-319501.iam.gserviceaccount.com'
+    MY_CALENDAR_ID = 'komei.hasegawa96@gmail.com'
+    CLIENT_SECRET_PATH = './wordpress-319501-6a9b09bcc13f.json'
     TIME_ZONE = 'Japan'
     
       def initialize
