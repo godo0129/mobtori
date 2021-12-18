@@ -1,11 +1,10 @@
 class SpreadsheetsController < ApplicationController
+  require "google_drive"
+  session = GoogleDrive::Session.from_config("./client_secret_105836604420-1tdm9b4i861vjvpijbko7hf3kln7go3s.apps.googleusercontent.com.json")
+  
   def read
-    require "google_drive"
-     
-    session = GoogleDrive::Session.from_config("./client_secret_105836604420-1tdm9b4i861vjvpijbko7hf3kln7go3s.apps.googleusercontent.com.json")
-     
     # 処理対象のスプレッドシートを指定
-    sheets = session.spreadsheet_by_key("1O2K5L1HsQTF1OREiyj3Apyz8RjnTegBAl77yDdZ3zhU").worksheet_by_title("メンバー提案")
+    sheets = session.spreadsheet_by_key("1IRuDY2warAhD-yZJIEY9VeBNX_IMwwmC1vau26Pon8M").worksheet_by_title("シート1")
      
     # C3セルの情報を取得
     # シート側で数値が書き込まれていても文字列が返ってくるので要注意
