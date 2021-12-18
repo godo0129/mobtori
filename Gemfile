@@ -40,7 +40,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'google-api-client'
 gem 'googleauth'
 gem 'sendgrid-ruby'
-# gem 'google_drive'
+gem 'google_drive', '2.1.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
