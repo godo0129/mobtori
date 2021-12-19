@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mobtori</title>
+    <title>BBS</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
+ 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+ 
   <body>
+    <header>
+      <h1><%= link_to "ひとことBBS", "/" %></h1>  <!-- ここを書き換え -->
+      <ul>
+        <li>
+          <%= link_to "新規投稿", new_tweet_path %><!-- ここを書き換え -->
+        </li>
+      </ul>
+    </header>
+ 
     <%= yield %>
   </body>
 </html>
