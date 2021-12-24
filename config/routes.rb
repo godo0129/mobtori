@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'spreadsheets/read'
+  get 'wordpress/wp_post'
   get 'calendars/read'
   get 'static_pages/top'
   get '/tweets', to:'tweets#new', as: 'new_tweet'
