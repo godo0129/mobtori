@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'top_pages#top'
+  get '/members', to: 'members#top'
   get 'spreadsheets/read'
   get 'calendars/read'
   get 'static_pages/top'
